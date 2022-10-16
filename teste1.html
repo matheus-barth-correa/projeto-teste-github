@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #si {
+            border:1px solid red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="insert(1)">1</button>
+    <button onclick="insert(2)">2</button>
+    <button onclick="bunda()">Apagar</button>
+    <div id="si"></div>
+    <script>
+        function insert(number) {
+            document.getElementById('si').innerHTML=number;
+        }
+        function bunda() {
+            document.getElementById('si').innerHTML=""
+        }
+    </script>
+</body>
+</html>
