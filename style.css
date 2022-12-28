@@ -1,0 +1,20 @@
+img {
+    width: 380px;
+    height: 350px;
+    border-radius:20px;
+}
+div {
+    width:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.747);
+    margin-left: 32.5%; 
+}
+span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}

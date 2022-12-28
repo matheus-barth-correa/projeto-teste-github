@@ -4,44 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        #primeiro {
-            text-align:right;
-            font-size:12px;
-            color:blue;
-        }
-        .segundo  {
-            text-align: left;
-
-        }
-        p {
-            display:block ;
+        header {
+            display: flex;
             justify-content: center;
-            font-size: 24px; 
         }
-        img {
-            border:1px solid
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 45px;
         }
     </style>
 </head>
-<body>
-    <h2 style="font-size:12px" align="justify">Olá, me chamo Matheus</h2>
-
-    <h1>Negocios</h1>
-    <h2>Primeiro Negocio</h2>
-    <p id="primeiro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, voluptas? Quos consectetur nostrum doloremque est laborum velit ipsum ipsa odit ea iste quam voluptas voluptatum ullam accusantium quae, deleniti quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae ipsum dolorum quasi! Aliquam, non. Cupiditate est at, nihil totam optio, quas numquam veritatis ducimus ea iure officia, quia velit!
-    </p>
-    <h2>Segundo Negocio</h2>
-    <p class="segundo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit assumenda numquam at quis et deleniti ea amet nam dignissimos molestias blanditiis est esse quas odit deserunt atque, nisi eius magnam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, doloremque magnam repudiandae odit a, sint, aliquam suscipit officiis ratione sed ducimus tempore iure! Architecto saepe facilis aperiam eligendi atque illum?</p>
-    <table border="1" cellspacing="0" align="center">
-        <tr align="center">
-            <td><img src="imagens/fogão.jpg" alt="Fogão" height="200px"><p>Fogão</p></td>
-            <td><img src="imagens/geladeira.webp" alt="Fogão" height="200px"><p>Geladeira</p></td>
-            <td><img src="imagens/televisor.jpg" alt="Fogão" height="200px"><p>Televisor</p></td>
-        </tr>
-    </table>
-        
-    
+<body id="co" onload="carregar()">
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    <main>
+        <div>
+            <span id="resposta"></span>
+            <img id="imagem" src="imagens/Foto Manhã - Editado.png" alt="Fotos que vai alterna de acordo com o horario de brasilia">
+            <span id="resposta2"></span>
+        </div>
+    </main>
+    <script src="script1.js"></script>
 </body>
 </html>

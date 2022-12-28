@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        .multas {
+            display: flex;
+            justify-content: center;
+            gap:10px;
+            align-items: center;
+        }
+        .posicionamento {
+            display:flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #quadrado {
+            height: 250px;
+            width: 300px;
+            border-radius: 10px;
+            border:2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Somar as Multas</h1>
+    <div class="multas">
+        <input type="number" name="" id="retangulo1">+
+        <input type="number" name="" id="retangulo2">+
+        <input type="number" name="" id="retangulo3"> <button onclick="somar()">=</button>
+    </div>
+    <div class="posicionamento">
+        <div id="quadrado" align="center"></div>
+    </div>
+    <script>
+        function somar() {
+            var n1=document.getElementById('retangulo1')
+            var n2=document.getElementById('retangulo2')
+            var n3=document.getElementById('retangulo3')
+            var number1=Number(n1.value)
+            var number2=Number(n2.value)
+            var number3=Number(n3.value)
+            var resultado=number1+number2+number3
+            document.getElementById('quadrado').innerHTML=`<strong>O resultado é de R$ <q>${resultado}</q> reais.</strong>`
+            if (resultado > 1000) {
+                document.getElementById('quadrado').innerHTML=`O valor passou do limite, chegou à R$:${resultado} reais.`
+            } 
+        }
+    </script>
+</body>
+</html>
